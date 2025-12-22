@@ -1,0 +1,28 @@
+{
+  "name": "@nighttrax/vite-example",
+  "description": "Example of using Vite in a TS monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@nighttrax/components": "workspace:*",
+    "@nighttrax/foo": "workspace:*",
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "@types/react-dom": "~19.2.0",
+    "@vitejs/plugin-react": "~5.1.0",
+    "rimraf": "~6.1.0",
+    "typescript": "~5.9.0",
+    "vite-tsconfig-paths": "~5.1.0",
+    "vite": "~7.2.0"
+  }
+}

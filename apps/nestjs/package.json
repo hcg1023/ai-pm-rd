@@ -1,0 +1,29 @@
+{
+  "name": "nestjs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "pnpm run clean",
+    "build": "nest build",
+    "start:prod": "node dist/apps/nestjs/src/main",
+    "start:dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@nestjs/common": "~11.1.0",
+    "@nestjs/core": "~11.1.0",
+    "@nestjs/platform-express": "~11.1.0",
+    "@nighttrax/foo": "workspace:*",
+    "reflect-metadata": "~0.2.2",
+    "rimraf": "~6.1.0",
+    "rxjs": "~7.8.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "~11.0.0",
+    "@types/express": "~5.0.0",
+    "@types/node": "~22.19.0",
+    "ts-node": "~10.9.0",
+    "tsconfig-paths": "~4.2.0",
+    "typescript": "~5.9.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@nighttrax/components",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm run clean && pnpm run compile",
+    "clean": "rimraf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": "~19.2.0"
+  },
+  "dependencies": {
+    "@nighttrax/foo": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0",
+    "rimraf": "~6.1.0"
+  }
+}
