@@ -1,0 +1,12 @@
+
+> nestjs@0.0.1 prebuild /Users/haochenguang/Desktop/github/ai-pm-rd/apps/nestjs
+> pnpm run clean
+
+
+> nestjs@0.0.1 clean /Users/haochenguang/Desktop/github/ai-pm-rd/apps/nestjs
+> rimraf dist
+
+
+> nestjs@0.0.1 build /Users/haochenguang/Desktop/github/ai-pm-rd/apps/nestjs
+> nest build
+

@@ -12,6 +12,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "incremental": true,
-    "noEmit": false
+    "noEmit": false,
+    "types": ["jest"]
   }
 }

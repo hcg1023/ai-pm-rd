@@ -7,21 +7,34 @@
     "prebuild": "pnpm run clean",
     "build": "nest build",
     "start:prod": "node dist/apps/nestjs/src/main",
-    "start:dev": "nest start --watch"
+    "start:dev": "nest start --watch",
+    "dev": "nest start --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
   },
   "dependencies": {
     "@nestjs/common": "~11.1.0",
+    "@nestjs/config": "~3.1.1",
     "@nestjs/core": "~11.1.0",
     "@nestjs/platform-express": "~11.1.0",
-    "@nighttrax/foo": "workspace:*",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "openai": "~4.20.1",
     "reflect-metadata": "~0.2.2",
     "rimraf": "~6.1.0",
     "rxjs": "~7.8.0"
   },
   "devDependencies": {
     "@nestjs/cli": "~11.0.0",
+    "@nestjs/testing": "~11.1.0",
     "@types/express": "~5.0.0",
+    "@types/jest": "~29.5.0",
     "@types/node": "~22.19.0",
+    "@types/supertest": "~2.0.0",
+    "jest": "~29.7.0",
+    "supertest": "~6.3.0",
+    "ts-jest": "~29.1.0",
     "ts-node": "~10.9.0",
     "tsconfig-paths": "~4.2.0",
     "typescript": "~5.9.0"
